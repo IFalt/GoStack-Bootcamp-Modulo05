@@ -119,5 +119,34 @@ export const ButtonFilter = styled.div`
       background: #7159c1;
       color: #fff;
     }
+
+    &:active {
+      background: ${props => (props.cliked ? '#7159c1' : '#eee')};
+      color: #fff;
+    }
+  }
+`;
+
+export const SwitchPages = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 100px;
+    border: 0;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 10px 2px 10px;
+    font-weight: bold;
+
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  }
+
+  span {
+    margin: 0 6px;
   }
 `;
