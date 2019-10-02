@@ -101,3 +101,23 @@ export const IssueList = styled.ul`
     }
   }
 `;
+
+export const ButtonFilter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 100px;
+    border: 0;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 0 2px 10px;
+    font-weight: bold;
+
+    &:hover {
+      background: #7159c1;
+      color: #fff;
+    }
+  }
+`;
